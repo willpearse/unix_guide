@@ -237,13 +237,15 @@ in your learning BASH to begin with?
   \texttt{wget} & \emph{Get} something from the \emph{Web}; use it to download programs etc.\\
   \texttt{tar} & Used to create `tar-balls' (zip files); \texttt{tar -xf file.tar.gz} will unzip something, \texttt{tar -cf new.tar folder another.file} will create a new .tar from the folder(s) and file(s) you specify. \texttt{unzip} does the same thing but for zip file.\\
   \texttt{rm} & You can delete a whole folder and everything in it by running \texttt{rm} \emph{recursively} and \emph{forcing} it to delete things, \emph{e.g.}, \texttt{rm -rf folder}. Many, many people have deleted more than they bargained using this tool.\\
-  \texttt{cp} & You can \emph{recursively} copy things, meaning you'll be able to copy a directory, \emph{e.g.}, \texttt{cp -r folder}.\\
+  \texttt{cp} & You can \emph{recursively} copy a directory, \emph{e.g.}, \texttt{cp -r folder}.\\
   \texttt{Rscript} & Runs an R script; useful in conjunction with \texttt{nohup} and friends (see above).\\
     \texttt{apt-get} & Used on many Linux computers (notably Debain and Ubuntu) to install programs; you will almost certainly need to have \texttt{sudo} access to do this.\\
   \texttt{sudo} & \emph{Super user do}; allows administrators to authenticate before doing anything potentially dangerous to the system. If it's your own computer, you will be able to use this command. For the love of God be careful with it!\\
   \texttt{tab} & Hit the tab-key when part-way through a command or file-name and BASH will try to complete it for you. If there is more than one potential match, keep hitting it and it will show all the possible completions.\\
   \texttt{*} & You can list, copy, and delete based on wild-card matching. For example, \texttt{ls *.txt} will show you all the text files in a directory, and \texttt{rm first.try*} will remove files starting with the phrase `first try'. Many, many people have done more than they bargained using this tool.\\
   \texttt{|} & Pipes are one of the most powerful features of BASH. You can use them to chain commands together; for instance \texttt{ls -l | wc -l} will print out all the files in your directory (one per line; \texttt{ls -l}), and \texttt{|} takes that information and passes it to \texttt{wc -l} that counts the number of lines in its input. Voil\'{a}; you now know how many files are in the directory. Doing operations using \texttt{|} can result in orders of magnitude increase in execution speed; writing to disk is slow.\\
+  \texttt{who}/\texttt{write} & To send a message to someone logged in, find them with \texttt{who} and note their terminal (second column). Send them a message with \texttt{write username terminal}, hit enter, type your message, then control-D (end-of-line).\\
+\texttt{R env} & Set the default \emph{R} library by making a file called \texttt{.Renviron} containing the line \texttt{R\_LIBS=/home/share/R/} (...or wherever else...)\\
   \hline
   \end{tabular}
 
